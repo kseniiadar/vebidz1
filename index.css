@@ -1,0 +1,630 @@
+@import url('https://fonts.googleapis.com/css2?family=Farsan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+      :root{
+          --panel-bg: white;
+          --text: black;
+		  --color:black;
+        }
+        :root[theme='dark'] {
+          --panel-bg: black;
+          --text:white;
+		  --color:white;
+        }
+      
+body
+{  
+  background: var(--panel-bg);
+	height: auto;
+	max-width:100%;
+	
+    margin: 0 auto;
+}
+@font-face{
+        font-family: 'Fortuna Gothic FlorishC';
+        src: url(7.ttf)
+        ;	height: auto;
+	max-width:100%;
+    }
+ @font-face {
+  font-family: 'Six Caps';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Six Caps'), local('SixCaps'), url(https://fonts.gstatic.com/s/sixcaps/v10/6ae_4KGrU7VR7bNmaYcV_3Q.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+.clear-fix:after
+{	height: auto;
+	max-width:100%;
+    display: block;
+    clear: both;
+
+    content: '';
+}
+.sketchfab-embed-wrapper
+{	text-align: center;
+height: 100%;
+max-width:100%;
+  }
+/*––––––––––––––––––Шапка газеты––––––––––––––––––––*/
+.header
+{	height: auto;
+	max-width:100%;
+    margin: 35px 0 25px;
+}
+
+.header__info
+ {height: auto;
+	max-width:100%;
+    float: left;
+    text-align: center ;
+    font-size: 14px;
+    box-sizing: border-box;
+    width: 200px;
+    padding: 25px 10px;
+    border: 1px solid;
+}
+
+
+.header__weather
+{
+    float: right;
+	height: auto;
+	max-width:100%;
+    width: 200px;
+}
+
+.header__weather-title
+{	height: auto;
+	max-width:100%;
+    font-family: 'SpaceMono';
+    font-weight:bold;
+    text-align: center;
+    font-size: 117%;
+    
+    margin: 0;
+}
+
+.header__weather-text
+{    color: var(--text);
+    line-height:110%;
+    font-size: 80%;
+    text-align: justify ;
+    margin: 0;
+		height: auto;
+	max-width:100%;
+}
+
+.header__title
+{
+    overflow: visible;
+    height: auto;
+	max-width:100%;
+    font-family: 'Fortuna Gothic FlorishC'; 
+    font-size: 80px;
+    margin: 0;
+    text-align: center;
+}
+
+.sub-header
+{  color: var(--color);
+    padding: 5px 0;
+height: auto;
+	max-width:100%;
+    border-top: 1px solid;
+    border-bottom: 2px solid;
+}
+
+.sub-header__copyright
+{ color: var(--color);
+    display: inline-block;
+    font-size: 60%;
+    margin: 0 30px;
+	height: auto;
+	max-width:100%;
+}
+
+.sub-header__price
+{  color: var(--text);
+	height: auto;
+	max-width:100%;
+    float: right;
+}
+
+
+/*––––––––––––––––––Основной контент––––––––––––––––*/
+.content
+{height: auto;
+	max-width:100%;
+    display: flex;
+	  color: var(--text);
+}
+
+/*––––––––––––––––––Блок статьи–––––––––––––––––––––*/
+.article__title
+{height: auto;
+	max-width:100%;
+    font-family: 'Six Caps';
+    font-size: 320%;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: bold;
+	  color: var(--text);
+}
+
+.article__help
+{  color: var(--text);
+	height: auto;
+	max-width:100%;
+    margin-top: 10px !important;
+    margin-bottom: 4px !important;
+}
+
+
+.article__add-text
+
+{  color: var(--text);
+	height: auto;
+	max-width:100%;
+    font-style: italic;
+    font-size: 80%;
+    text-indent:15px;
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.article__author
+{	  color: var(--text);
+height: auto;
+	max-width:100%;
+    text-align: center;
+    font-size: 83%;
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.article__continue
+{  color: var(--text);
+	height: auto;
+	max-width:100%;
+    text-align: center;
+    font-size: 80%;
+    font-style: italic;
+    display: block;
+}
+
+.article__image
+{	  color: var(--text);
+height: auto;
+	max-width:100%;
+    margin: 0;
+    text-indent: 0;
+}
+
+.article__image.article__image_align_right
+{  color: var(--text);
+    float: right;
+	height: auto;
+	max-width:100%;
+    margin: 10px 0 5px 10px;
+}
+
+.article__subtitle
+{  color: var(--text);
+	height: auto;
+	max-width:100%;
+    text-align: center;
+    font-size: 117%;
+    font-family: 'Times New Roman';
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.article__title_font_racing
+{  color: var(--text);
+	height: auto;
+	max-width:100%;
+    font-family: 'Racing Sans One';
+    font-size: 15px;
+}
+.article__title_font_farsan
+{  color: var(--text);
+	height: auto;
+	max-width:100%;
+    font-family: 'Farsan';
+    font-size: 230%;
+    font-weight: bold;
+}
+.article__image-caption
+{  color: var(--text);
+	height: auto;
+	max-width:100%;
+    text-decoration: underline;
+    font-size: 80%;
+}
+/*––––––––––––––––––Блок главной фотографии–––––––––*/
+.main-photo__wrapper
+{  color: var(--text);
+    margin: 0;
+}
+
+.main-photo__img
+{  color: var(--text);
+	 text-align: left;
+    text-transform: uppercase;
+
+	height: auto;
+	width:20%;
+	display:inline-block;
+	
+}
+
+.main-photo__img1
+{  color: var(--text);
+	 text-align: center;
+    text-transform: uppercase;
+    width: 150px;
+	height: auto;
+	width:20%;
+		display:inline-block;
+	
+}
+.main-photo__img2
+{  color: var(--text);
+	 text-align: right;
+    text-transform: uppercase;
+    width: 150px;
+	height: 150px;
+	height: auto;
+	max-width:100%;	display:inline-block;
+	
+}
+.main-photo__title
+{  color: var(--text);
+    margin: 0;
+}
+
+.main-photo__desc
+{  color: var(--text);
+    font-size: 80%;
+    margin-bottom: 20px;
+}
+.main-photo__caption
+{  color: var(--text);
+    font-size: 70%;
+    text-align: right;
+    text-transform: uppercase;
+}
+.main-photo__caption1
+{  color: var(--text);
+    font-size: 70%;
+    text-align: left;
+    text-transform: uppercase;
+}
+.main-photo__caption3
+{  color: var(--text);
+    font-size: 70%;
+    text-align: center;
+    text-transform: uppercase;
+}
+/*––––––––––––––––––Линия разделения––––––––––––––––*/
+.line
+{ color: var(--color);
+    border-top: 1px solid #000;
+}
+
+.line.line_type_bold
+{  color: var(--text);
+    margin-bottom: 3px;
+
+    border-width: 2px;
+}
+
+.line.line_type_short
+{height: auto;
+  color: var(--text);
+    display: inline-block;
+
+    width: 70px;
+    margin: 0 auto;
+}
+
+/*––––––––––––––––––Центральные колонки газеты––––––––––––––––––*/
+.multicolumn
+{  color: var(--color);
+    margin-top: 10px;
+}
+
+.multicolumn__right,
+.multicolumn__left
+{	height: auto;
+ color: var(--color);
+    display: inline-block;
+  
+    box-sizing: border-box;
+    width: 19%;
+
+    vertical-align: top;
+
+}
+.multicolumn__left1
+{  color: var(--text);
+    display: inline-block;
+	height: auto;
+
+    box-sizing: border-box;
+    width: 100%;
+
+    vertical-align: top;
+
+}
+.multicolumn__right
+{  color: var(--text);
+    padding-left: 10px;
+}
+
+.multicolumn__left
+{
+	  color: var(--text);
+    padding-right: 10px;
+
+    border-right: 1px solid ;
+	border-color: var(--color);
+}
+
+.multicolumn .line_type_short
+{  color: var(--text);
+    width: 19.5%;
+    margin: 10px auto;
+}
+
+.multicolumn .article__title
+{  color: var(--text);
+    margin: 10px 0 0 0;
+}
+
+.center-column
+{   color: var(--text);
+	height: auto;
+	width:20%;
+	display:inline-block;
+	
+    margin-top: 20px;
+    padding: 0 10px;
+
+    flex-grow: 2;
+	border-bottom: 2px solid;
+}
+.photo 
+{  color: var(--text);
+	height: auto;
+	max-width:100%;
+}
+/*––––{––––––––––––––Второстепенные колонки газеты––––––––––––––––––*/
+.left-column
+{  color: var(--text);
+
+    border-right: 1px solid ;
+	border-color: var(--color);
+}
+
+.right-column
+{  color: var(--text);
+    border-left: 1px solid ;
+	border-color: var(--color);
+}
+
+.right-column,
+.left-column
+{  color: var(--text);
+    box-sizing: border-box;
+    width: 200px;
+    margin-top: 20px;
+    padding: 0 10px;
+
+    flex-shrink: 0;
+}
+  .body2{
+	    color: var(--text);
+	  height: auto;
+	max-width:100%;
+	width:1000px;
+	     border-top: 1px solid;
+    border-bottom: 2px solid;
+  }
+		.caption{  color: var(--text);
+	text-align:left;
+	 border-left: 1px solid #000;
+	 border-right: 1px solid #000;
+	
+	}
+   .even {
+  background: var(--panel-bg); 
+	border-style: dashed;
+   }
+   .la {
+    text-align: left; /* Выравнивание по левому краю */
+   }
+   .body1{
+	 
+	
+  height: auto;
+	max-width:100%;
+	 /* Ширина таблицы */
+    border: 1px dashed #444 ;
+	border-style: dashed;
+border-bottom-style: dashed;	/* Рамка вокруг таблицы */
+    margin: auto; /* Выравниваем таблицу по центру окна  */
+    background: #CCCCFF;
+   }
+/*––––––––––––––––––––––––––––––––––––––––––––––––––*/
+@import url(https://fonts.googleapis.com/css?family=Sigmar+One);
+body3 {
+  margin: 0;
+  text-align: center;
+  background: #F4F1F8;
+  height: auto;
+	max-width:100%;
+}
+h1 {
+  font-family: 'Sigmar One', cursive;
+  color: #FFFF;
+  height: auto;
+	max-width:100%;
+}
+navbar{
+	  height: auto;
+	max-width:100%;
+}
+h4 {
+  font-family: monospace;
+  height: auto;
+	max-width:100%;
+}
+section1{
+  display: block;
+  width: 960px;
+  margin: 0 auto;
+  height: auto;
+	max-width:100%;
+}
+div1{
+  height: 120px;
+  width: 220px;  
+  height: auto;
+	max-width:100%;
+}
+.container1 {
+  position: relative;
+  display: inline-block;
+  height: 120px;
+  margin: 0 2em 2em 0;
+  opacity: .7;
+  border-radius: 5px;
+  background: #E4E1E4;
+  -webkit-perspective: 400px;
+  perspective: 400px;
+  -webkit-transform-style: preserve-3d; 
+  transform-style: preserve-3d;
+}
+.transform {
+  position: absolute;
+  bottom: 0;
+  background: rgba(65, 245, 254, .5);
+  border-radius: 5px;
+  -webkit-animation: notransform 5s infinite;
+  animation: notransform 5s infinite;
+}
+
+.scale3d {
+  -webkit-transform: scale3d(0,0,1);
+  -ms-transform: scale3d(0,0,1);
+  transform: scale3d(0,0,1);
+  -webkit-animation-delay: .5s;
+  animation-delay: .5s;
+}
+
+@-webkit-keyframes notransform {
+  50% {transform: none;}
+}
+@keyframes notransform {
+  50% {transform: none;}
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+    margin-left:25%;
+	  margin-right:25%;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  margin-left:25%;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+	text-align: center;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+		text-align: center;
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
